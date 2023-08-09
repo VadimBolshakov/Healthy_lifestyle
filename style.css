@@ -40,15 +40,15 @@ body {
 }
 
 .container {
-    max-width: 590px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 490px;
+    text-align: center;
+
 }
 
 .inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px, 200px, 200px;
+    grid-template-rows: auto;
 }
 
 .img {
@@ -66,13 +66,20 @@ body {
 
 .btn {
     display: inline-block;
-    width: 100%;
+    width: 50%;
     padding: 10px 0;
     margin: 10px 0;
     border: none;
     border-radius: 10px;
-    background-color: var(--tg-theme-button-color);
+    background-color: rgb(11, 250, 51);
     color: var(--tg-theme-button-text-color);
     font-size: 16px;
     cursor: pointer;
+    text-transform: uppercase;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(10, 153, 255);
 }
